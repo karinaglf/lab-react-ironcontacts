@@ -3,7 +3,7 @@
 function ContactCard( {celebrityObj, deleteCelebrity} ) {
     return (
         <tr>
-            <td><img src={celebrityObj.pictureUrl} /></td>
+            <td><img src={celebrityObj.pictureUrl} alt={celebrityObj.name}/></td>
             <td>{celebrityObj.name}</td>
             <td>{Math.round((celebrityObj.popularity) * 100) / 100}</td>
             { celebrityObj.wonOscar ? <td> 🏆</td> : <td> </td>}
